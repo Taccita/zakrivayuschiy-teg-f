@@ -438,7 +438,7 @@
 }
 
 .multy {
-  filter: grayscale(80%) opacity(0.7);
+  filter: grayscale(80%) opacity(0.7) saturate(200%);
 }
 
 @media (width <= 375px) {
