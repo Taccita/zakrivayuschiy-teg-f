@@ -360,6 +360,8 @@
 }
 
 .floppy-dialog {
+  background-color: var(--background-color);
+  color: var(--accent-color);
   inset-block-start: 20%;
   margin-inline: 42.8%;
 }
@@ -389,6 +391,7 @@
   width: 39px;
   height: 39px;
 }
+
 
 .floppy-button > .floppy-text::after {
   content: "";
