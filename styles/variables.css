@@ -1,1 +1,24 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --inter-font: "Inter";
+  --star-font: "PressStart2P-Regular";
+  --text-weight: 400;
+  --title-weight: 700;
+  --heart-color: red;
+  --background-color: #fff;
+  --accent-color: #000;
+  --button-text-color: #fff;
+  --background-image: repeating-linear-gradient(
+      180deg,
+      #e7e7e7,
+      transparent 4px
+    ),
+    repeating-linear-gradient(90deg, #e7e7e7, transparent 4px),
+    linear-gradient(#e7e7e7, #1a1a1a 0.01%);
+}
+
+@supports (font-variation-settings: normal) {
+  
+  .page {
+    --inter-font: "Inter-Variable";
+  }
+}

@@ -4,3 +4,71 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+.theme-dark {
+
+  .page {
+    --background-color: #000;
+    --accent-color: rgb(0 204 20);
+    --background-image: repeating-linear-gradient(180deg, #000, transparent 4px),
+      repeating-linear-gradient(90deg, #000, transparent 4px),
+      linear-gradient(#007f0c, #004306);
+    --text-weight: 465;
+    --title-weight: 785;
+    --button-text-color: rgb(0 204 20);
+    --heart-color: red;
+  }
+}
+
+.theme-light {
+  
+  .page {
+    --background-color: #fff;
+    --accent-color: #000;
+    --background-image: repeating-linear-gradient(
+        180deg,
+        #e7e7e7,
+        transparent 4px
+      ),
+      repeating-linear-gradient(90deg, #e7e7e7, transparent 4px),
+      linear-gradient(#e7e7e7, #1a1a1a 0.01%);
+    --text-weight: 400;
+    --title-weight: 700;
+    --button-text-color: #fff;
+    --heart-color: red;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+
+  .page {
+    --background-color: #fff;
+    --accent-color: #000;
+    --background-image: repeating-linear-gradient(
+        180deg,
+        #e7e7e7,
+        transparent 4px
+      ),
+      repeating-linear-gradient(90deg, #e7e7e7, transparent 4px),
+      linear-gradient(#e7e7e7, #1a1a1a 0.01%);
+    --text-weight: 400;
+    --title-weight: 700;
+    --button-text-color: #fff;
+    --heart-color: red;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  
+  .page {
+    --background-color: #000;
+    --accent-color: rgb(0 204 20);
+    --background-image: repeating-linear-gradient(180deg, #000, transparent 4px),
+      repeating-linear-gradient(90deg, #000, transparent 4px),
+      linear-gradient(#007f0c, #004306);
+    --text-weight: 465;
+    --title-weight: 785;
+    --button-text-color: rgb(0 204 20);
+    --heart-color: red;
+  }
+}
