@@ -286,7 +286,7 @@
   outline: none;
 }
 
-.save__button:focus-visible{
+.save__button:focus-visible {
   box-shadow: 0 0 var(--accent-color), 0 1px var(--accent-color),
   1px 0 var(--accent-color), 0 0 var(--accent-color);
 } 
@@ -386,7 +386,7 @@
   outline: none;
 }
 
-.floppy-button:focus-visible{
+.floppy-button:focus-visible {
   box-shadow: 0 0 var(--accent-color), 0 1px var(--accent-color),
   1px 0 var(--accent-color), 0 0 var(--accent-color);
 }
