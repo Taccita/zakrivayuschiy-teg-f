@@ -334,6 +334,11 @@
   margin-block-end: 15.7%;
 }
 
+.floppy-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
 .floppy {
   display: flex;
   padding-block-start: 18px;
