@@ -193,7 +193,7 @@
   grid-template-columns: auto auto;
   justify-content: end;
   padding-inline-start: 3px;
-  margin-block-end: 2.3%;
+  margin-block-end: 2.4%;
 }
 
 .card__like-button {
@@ -218,11 +218,11 @@
 
 .card__icon-button {
   border: none;
-  padding-block-start: 4px;
+  padding-block-start: 3px;
   background-color: transparent;
   transition: 0.3s outline ease;
-  outline-offset: -2px;
   cursor: pointer;
+  
 }
 
 .card__icon-button:focus {
@@ -231,7 +231,7 @@
 
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
-  outline-offset: -2px;
+  outline-offset: -0.4em;
 }
 
 .card__like-button:focus {
@@ -247,22 +247,21 @@
   position: relative;
 }
 
-.footer {
+.save {
   max-inline-size: 700px;
-  padding-block-start: 7%;
   padding-block-end: 15%;
   display: flex;
   justify-content: center;
 }
 
-.footer__svg {
+.save__svg {
   margin-inline-start: 10px;
   margin-block-start: 1%;
   inline-size: 22px;
   fill: var(--accent-color);
 }
 
-.footer__button {
+.save__button {
   border: 2px solid var(--accent-color);
   padding-block-start: 11px;
   padding-block-end: 17px;
@@ -274,32 +273,23 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+   transition: box-shadow 0.3s ease;
 }
 
-.footer__text {
+.save__text {
   padding-inline: 10px;
   padding-block-start: 2.8%;
   position: relative;
 }
 
-.footer__button > .footer__text::after {
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: var(--accent-color);
-  inset-inline-start: 3%;
-  width: 0;
-  height: 2px;
-  transition: width 0.3s ease;
-}
-
-.footer__button:focus {
+.save__button:focus {
   outline: none;
 }
 
-.footer__button:focus-visible .footer__text::after {
-  width: 100%;
-}
+.save__button:focus-visible{
+  box-shadow: 0 0 var(--accent-color), 0 1px var(--accent-color),
+  1px 0 var(--accent-color), 0 0 var(--accent-color);
+} 
 
 .difference-button {
   position: relative;
@@ -336,12 +326,12 @@
   background-color: rgb(0 0 0/0.75);
 }
 
+
 .floppy-dialog {
   background-color: var(--background-color);
   color: var(--accent-color);
-  max-inline-size: 361px;
-  max-block-size: 197px;
-  margin: auto;
+  margin-inline: 42.9%;
+  margin-block-end: 15.7%;
 }
 
 .floppy {
@@ -364,6 +354,7 @@
   border: 2px solid var(--accent-color);
   position: relative;
   cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 .floppy-text {
@@ -395,9 +386,11 @@
   outline: none;
 }
 
-.floppy-button:focus-visible .floppy-text::after {
-  width: 100%;
+.floppy-button:focus-visible{
+  box-shadow: 0 0 var(--accent-color), 0 1px var(--accent-color),
+  1px 0 var(--accent-color), 0 0 var(--accent-color);
 }
+
 
 .invert {
   filter: invert(0.4);
@@ -449,10 +442,11 @@
 
   .card__title {
     padding-inline-end: 15%;
-    padding-inline-start: 3%;
+    padding-inline-start: 3.2%;
   }
 
   .card__text {
+    padding-block-start: 0.7%;
     padding-inline-start: 6.4%;
     padding-inline-end: 8%;
     line-height: 21px;
@@ -475,21 +469,21 @@
     inset-block-end: 3%;
   }
 
-  .footer__button {
-    margin-block-start: 6%;
+  .save__button {
+    margin-block-start: 1%;
     padding-block-end: 0.7em;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .footer__text {
-    padding-block-start: 3.5%;
+  .save__text {
+    padding-block-start: 3.6%;
   }
 
-  .footer__svg {
+  .save__svg {
     margin-inline-start: 1%;
-    margin-block-start: 2%;
+    margin-block-start: 1.5%;
     height: 28px;
     width: 28px;
   }
@@ -517,6 +511,7 @@
 
   .floppy-dialog {
     margin-inline: 4%;
+    margin-block-end: 38%;
   }
 }
 

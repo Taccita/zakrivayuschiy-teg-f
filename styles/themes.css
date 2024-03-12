@@ -40,8 +40,8 @@
     --title-weight: 700;
     --button-text-color: var(--background-color);
     --heart-color: red;
-  }
-}
+  }}
+
 
 @media (prefers-color-scheme: light) {
 

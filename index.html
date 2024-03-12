@@ -18,10 +18,8 @@
   </head>
   <body class="page">
     <header class="header">
-      <p class="logo">&lt;/html&gt;</p>
-      <a>
+      <a class="logo">&lt;/html&gt;</a>
         <h1 class="page-title">Закрывающий тег</h1>
-      </a>
       <nav class="theme-menu header__theme-menu">
         <!-- Не менйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -526,19 +524,19 @@
           </button>
         </div>
       </article>
-    </main>
-    <footer class="footer">
-      <button
-        onclick="window['dialog-id'].showModal();"
-        aria-controls="dialog-id"
-        class="footer__button difference-button"
-      >
-        <svg class="footer__svg difference-svg" viewBox="0 0 21 21">
-          <use href="svg/floppy.svg#floppy" />
-        </svg>
-        <span class="footer__text difference-text">Сохранить на память</span>
-      </button>
-    </footer>
+      <div class="save">
+        <button
+          onclick="window['dialog-id'].showModal();"
+          aria-controls="dialog-id"
+          type = "button"
+          class="save__button difference-button"
+         >
+            <svg class="save__svg difference-svg" viewBox="0 0 21 21">
+              <use href="svg/floppy.svg#floppy" />
+            </svg>
+            <span class="save__text difference-text">Сохранить на память</span>
+        </button>
+    </div>
     <dialog class="floppy-dialog" id="dialog-id">
       <div class="floppy">
         <svg class="floopy-svg" viewBox="0 0 21 21">
@@ -554,6 +552,7 @@
         <span class="difference-text floppy-text">Ok</span>
       </button></form>
     </dialog>
+  </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
